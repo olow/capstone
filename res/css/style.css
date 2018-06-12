@@ -8,6 +8,7 @@ html {
 body {
   background-color: whitesmoke;
   color: dimgrey;
+  font-weight: lighter;
   line-height: 1.4;
 }
 
@@ -85,8 +86,15 @@ h1 {
 h2 {
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 1.5;
+  text-align: center;
+  margin: 2rem 0;
+}
 
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: left;
+  margin: 1rem 0;
 }
 
 button {
@@ -116,6 +124,54 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+/* COURSES */
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section-courses {
+  background-color: rgba(234,235,236,1);
+}
+
+.courses {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  background-color: white;
+}
+
+.course-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.course-description {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.course-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: left;
+  margin: 1rem 0;
 }
 
 /* FOOTER */
