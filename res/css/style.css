@@ -1,14 +1,14 @@
 /* Universal Styles */
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Avenir", sans-serif;
   font-size: 16px;
 }
 
 body {
   background-color: whitesmoke;
-  color: dimgrey;
-  font-weight: lighter;
+  color: rgb(73,73,73);
+  font-weight: 400;
   line-height: 1.4;
 }
 
@@ -61,7 +61,7 @@ nav ul {
   display: flex;
 }
 
-nav ul li, li {
+nav ul li {
   padding-right: 1rem;
 }
 
@@ -71,38 +71,55 @@ nav ul li:last-child {
 
 a {
   text-decoration: none;
+  padding: 1rem;
 }
 
-h1, h2 {
-  margin-bottom: 2rem;
+a:hover {
+  background-color: black;
+  color: whitesmoke;
+  transition:
+    background-color 1s ease-out 200ms,
+    color 400ms ease-out;
+}
+
+.headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
+  letter-spacing: 1.2px;
+  margin-bottom: 2rem;
+
 }
 
 h2 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-align: center;
-  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 2rem 0;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
 }
 
 h4 {
   font-size: 1.2rem;
   font-weight: 600;
-  text-align: left;
-  margin: 1rem 0;
 }
 
 button {
   font-size: 1rem;
   color: white;
-  background-color: dimgrey;
-  padding: .5rem 8rem;
-  margin-top: 1rem;
+  background-color: rgb(73,73,73);
+  padding: 1rem 0;
+  width: 100%;
 }
 
 /* CONTENT */
@@ -126,15 +143,80 @@ button {
   align-items: flex-start;
 }
 
+/* ARTICLES */
+
+.articles {
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+.article-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1.5rem 2rem 1.5rem;
+}
+
+.article-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  width: 60%;
+}
+
+.article-main img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.articles-aside {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.article {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 1.5rem;
+  width: 100%;
+}
+
+.article:last-child {
+  background-color: hsla(0, 0%, 75%, 1);
+}
+
+.article img {
+  width: 35%;
+  height: auto;
+  display: block;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+
+.article-description {
+  width: 65%;
+}
+
+.article h4 {
+  margin-bottom: .5rem;
+}
+
+.article a {
+  color: dodgerblue;
+}
+
 /* COURSES */
+.course-section {
+  background-color: rgba(234,235,236,1);
+  width: 100%;
+}
 
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
-}
-
-.section-courses {
-  background-color: rgba(234,235,236,1);
 }
 
 .courses {
@@ -164,14 +246,85 @@ button {
 .course-description {
   display: flex;
   flex-direction: column;
+  height: 8rem;
   padding: 1rem 1rem 1.5rem 1rem;
+
+  text-align: left;
 }
 
-.course-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: left;
-  margin: 1rem 0;
+.category {
+  text-transform: uppercase;
+  font-weight: lighter;
+  padding: .5rem 0;
+}
+
+/* THESIS EXHIBIT */
+
+.thesis-section {
+  background-color: gainsboro;
+  width: 100%;
+}
+
+.thesis-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1.5rem 2rem 1.5rem;
+}
+
+.thesis-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  width: 60%;
+}
+
+.thesis-main video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.thesis-main h4 {
+  margin-bottom: .5rem;
+}
+
+.thesis-aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 1.5rem;
+  width: 40%;
+}
+
+.thesis {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.thesis:first-child {
+  background-color: hsla(0, 0%, 75%, 1);
+}
+
+.thesis img {
+  width: 35%;
+  height: auto;
+  display: block;
+  padding: 1rem;
+}
+
+.thesis-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 65%;
+}
+
+.thesis-description h4 {
+  margin-bottom: 1rem;
 }
 
 /* FOOTER */
