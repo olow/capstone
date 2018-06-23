@@ -176,8 +176,8 @@ button {
   width: 100%;
 }
 
-.article:hover {
-  background-color: hsla(0, 0%, 75%, 1);
+.article:hover, .thesis:hover {
+  background-color: hsla(0, 0%, 80%, 1);
   transition:
     background-color 200ms ease-in-out 200ms;
 }
@@ -301,10 +301,6 @@ button {
   align-items: center;
   width: 100%;
   overflow: hidden;
-}
-
-.thesis:first-child {
-  background-color: hsla(0, 0%, 75%, 1);
 }
 
 .thesis img {
