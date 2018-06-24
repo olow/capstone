@@ -13,11 +13,11 @@
     <header>
 
       <div class="branding">
-        <img src="res/img/ic-logo.svg" alt="Logo" />
+        <img src="./res/img/ic-logo.svg" alt="Logo" />
         <div class="branding-text"><span>COLMAR</span>ACADEMY</div>
       </div>
 
-      <nav>
+      <nav class="desktop">
         <ul>
           <li><a href="#">On campus</a></li>
           <li><a href="#">Online</a></li>
@@ -26,13 +26,24 @@
         </ul>
       </nav>
 
+      <nav class="mobile">
+        <ul>
+          <li><a href="#"><img src="./res/img/ic-on-campus.svg"></a></li>
+          <li><a href="#"><img src="./res/img/ic-online.svg"></a></li>
+          <li><a href="#"><img src="./res/img/ic-login.svg"></a></li>
+        </ul>
+      </nav>
+
     </header>
 
     <!-- Content -->
 
+    <!-- Full width background image for small screen views -->
+    <div class="mobile-banner-img"></div>
+
     <!-- Banner -->
     <div class="banner">
-      <img src="res/img/banner.jpg" alt="Collaborating people outside at a wooden table" />
+      <img class="desktop" src="./res/img/banner.jpg" alt="Collaborating people outside at a wooden table" />
       <div class="teaser-text">
         <h1>Learn something new everyday</h1>
         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
@@ -45,8 +56,8 @@
 
       <div class="article-wrapper">
 
-        <div class="article-main">
-          <img src="res/img/information-main.jpg" alt="Happy guy learning" />
+        <div class="article-main desktop">
+          <img src="./res/img/information-main.jpg" alt="Happy guy learning" />
           <div class="article-main description">
             <h2>It doesn't hurt to keep practicing.</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -56,7 +67,7 @@
 
         <div class="articles-aside">
           <div class="article">
-            <img src="res/img/information-orientation.jpg" alt="Orientation" />
+            <img src="./res/img/information-orientation.jpg" alt="Orientation" />
             <div class="article-description">
               <h4>Orientation date</h4>
               <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
@@ -65,16 +76,16 @@
           </div>
 
           <div class="article">
-            <img src="res/img/information-campus.jpg" alt="Campus" />
+            <img src="./res/img/information-campus.jpg" alt="Campus" />
             <div class="article-description">
               <h4>Our campus</h4>
-              <p>Find which ampus is close by you</p>
+              <p>Find which campus is close by you</p>
               <span class="read-more"><a href="#">Read more</a></span>
             </div>
           </div>
 
           <div class="article">
-            <img src="res/img/information-guest-lecture.jpg" alt="Guest lecture" />
+            <img src="./res/img/information-guest-lecture.jpg" alt="Guest lecture" />
             <div class="article-description">
               <h4>Our gues lecture</h4>
               <p>Join a keynote with Oliver Sack about music in medical treatment</p>
@@ -99,7 +110,7 @@
         <div class="courses">
 
           <div class="course-card">
-            <img src="res/img/course-software.jpg" alt="Software course" />
+            <img src="./res/img/course-software.jpg" alt="Software course" />
             <div class="course-description">
               <h4>Software engineering</h4>
               <p class="category">Courses</p>
@@ -108,7 +119,7 @@
           </div>
 
           <div class="course-card">
-            <img src="res/img/course-computer-art.jpg" alt="Computer art" />
+            <img src="./res/img/course-computer-art.jpg" alt="Computer art" />
             <div class="course-description">
               <h4>Computer art</h4>
               <p class="category">Courses</p>
@@ -117,7 +128,7 @@
           </div>
 
           <div class="course-card">
-            <img src="res/img/course-design.jpg" alt="Design">
+            <img src="./res/img/course-design.jpg" alt="Design">
             <div class="course-description">
               <h4>Design</h4>
               <p class="category">Courses</p>
@@ -126,7 +137,7 @@
           </div>
 
           <div class="course-card">
-            <img src="res/img/course-data.jpg" alt="Data course">
+            <img src="./res/img/course-data.jpg" alt="Data course">
             <div class="course-description">
               <h4>Data</h4>
               <p class="category">Courses</p>
@@ -135,7 +146,7 @@
           </div>
 
           <div class="course-card">
-            <img src="res/img/course-business.jpg" alt="Business course">
+            <img src="./res/img/course-business.jpg" alt="Business course">
             <div class="course-description">
               <h4>Business</h4>
               <p class="category">Courses</p>
@@ -144,7 +155,7 @@
           </div>
 
           <div class="course-card">
-            <img src="res/img/course-marketing.jpg" alt="Marketing course">
+            <img src="./res/img/course-marketing.jpg" alt="Marketing course">
             <div class="course-description">
               <h4>Marketing</h4>
               <p class="category">Courses</p>
@@ -168,7 +179,7 @@
       <div class="thesis-wrapper">
 
         <div class="thesis-main">
-          <video src="res/video/thesis.mp4" autoplay></video>
+          <video src="./res/video/thesis.mp4" autoplay></video>
           <h4>Reimagine urban</h4>
           <p>Curabitur vitae libero in lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
@@ -176,7 +187,7 @@
         <div class="thesis-aside">
 
           <div class="thesis">
-            <img src="res/img/thesis-fisma.jpg" alt="Fisma thesis" />
+            <img src="./res/img/thesis-fisma.jpg" alt="Fisma thesis" />
             <div class="thesis-description">
               <h4>Fisma: Design and Prototype</h4>
               <p>Desiner showcases of new prototype product.</p>
@@ -184,7 +195,7 @@
           </div>
 
           <div class="thesis">
-            <img src="res/img/thesis-now-and-then.jpg" alt="Now and Then thesis" />
+            <img src="./res/img/thesis-now-and-then.jpg" alt="Now and Then thesis" />
             <div class="thesis-description">
               <h4>Now and then</h4>
               <p>Research study about New York</p>
